@@ -1,0 +1,181 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8s-viz
+  name: k8s-backend
+  namespace: demo-1
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-viz
+      #tier: backend
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: k8s-viz
+        #tier: backend
+        actorSystemName: k8s-viz
+    spec:
+      containers:
+      - name: k8s-backend
+        image: cluster-vizualizer:0.1
+        imagePullPolicy: Never
+#        readinessProbe:
+#          httpGet:
+#            path: /ready
+#            port: management
+#            # Give the app 30 seconds time to start up before performing the first liveness check.
+#          initialDelaySeconds: 15
+#          timeoutSeconds: 2
+#          periodSeconds: 2
+#          failureThreshold: 3
+#        livenessProbe:
+#          httpGet:
+#            path: /alive
+#            port: management
+#            # Give the app 30 seconds time to start up before performing the first liveness check.
+#          initialDelaySeconds: 30
+#          timeoutSeconds: 2
+#          periodSeconds: 5
+#          failureThreshold: 3
+#        readinessProbe:
+#          httpGet:
+#            path: /ready
+#            port: 8558
+#        livenessProbe:
+#          tcpSocket:
+#            port: 8558
+        ports:
+        # akka remoting
+        - name: remoting
+          containerPort: 2552
+          protocol: TCP
+        # akka-management and bootstrap
+        - name: management
+          containerPort: 8558
+          protocol: TCP
+        env:
+        - name: NAMESPACE
+          value: "demo-1"
+        - name: AKKA_ROLES
+          value: "backend"
+        - name: HOSTNAME
+          valueFrom:
+            fieldRef:
+              apiVersion: v1
+              fieldPath: status.podIP
+        - name: K8S_NAMESPACE
+          value: "demo-1"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: k8s-viz
+  name: k8s-frontend
+  namespace: demo-1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-viz
+      #tier: frontend
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: k8s-viz
+        #tier: frontend
+        actorSystemName: k8s-viz
+    spec:
+      containers:
+        - name: k8s-frontend
+          image: cluster-vizualizer:0.1
+          imagePullPolicy: Never
+#          readinessProbe:
+#            httpGet:
+#              path: /ready
+#              port: 8558
+#          livenessProbe:
+#            tcpSocket:
+#              port: 8558
+#          readinessProbe:
+#            httpGet:
+#              path: /ready
+#              port: management
+#              # Give the app 30 seconds time to start up before performing the first liveness check.
+#            initialDelaySeconds: 15
+#            timeoutSeconds: 2
+#            periodSeconds: 2
+#            failureThreshold: 3
+#          livenessProbe:
+#            httpGet:
+#              path: /alive
+#              port: management
+#              # Give the app 30 seconds time to start up before performing the first liveness check.
+#            initialDelaySeconds: 30
+#            timeoutSeconds: 2
+#            periodSeconds: 5
+#            failureThreshold: 3
+          ports:
+            # akka remoting
+            - name: remoting
+              containerPort: 2552
+              protocol: TCP
+            # akka-management and bootstrap
+            - name: management
+              containerPort: 8558
+              protocol: TCP
+            - name: http
+              containerPort: 9000
+              protocol: TCP
+          env:
+            - name: NAMESPACE
+              value : "demo-1"
+            - name: AKKA_ROLES
+              value: "frontend"
+            - name: HOSTNAME
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: status.podIP
+            - name: K8S_NAMESPACE
+              value: "demo-1"
+
+
+---
+kind: Role
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: pod-reader
+  namespace: demo-1
+rules:
+- apiGroups: [""] # "" indicates the core API group
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]
+---
+kind: RoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: read-pods
+  namespace: demo-1
+subjects:
+# Note the `name` line below. The first default refers to the namespace. The second refers to the service account name.
+# For instance, `name: system:serviceaccount:myns:default` would refer to the default service account in namespace `myns`
+- kind: User
+  name: system:serviceaccount:demo-1:default
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: rbac.authorization.k8s.io
