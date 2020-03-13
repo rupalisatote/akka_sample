@@ -1,0 +1,5 @@
+[0m[[0m[33mwarn[0m] [0m[0m/home/ubuntu/akka/akka_sample/src/main/scala/sample/cluster/k8s/model/NCFClusterTree.scala:400:85: match may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0mIt would fail on the following inputs: HttpServiceStarted(_, _), HttpServiceStopped(_, _), RouteeStarted(_, _, _, _), RouteeStopped(_, _, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def handleClusterEvent(event:ClusterEvent): State[ClusterNode,ProcessingResult] = event match {[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                                                    ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

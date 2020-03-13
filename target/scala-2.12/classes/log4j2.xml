@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration>
+    <Appenders>
+        <Console name="stdout">
+            <PatternLayout>
+                <pattern>%date{HH:mm:ss} %-5level %logger{0} - %msg%n</pattern>
+            </PatternLayout>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name="sample.cluster" level="${sys:loglevel.sample.cluster-debug}"
+                additivity="false">
+            <AppenderRef ref="stdout"/>
+        </Logger>
+
+        <Root level="${sys:loglevel.root:-debug}">
+            <AppenderRef ref="stdout"/>
+        </Root>
+    </Loggers>
+</Configuration>

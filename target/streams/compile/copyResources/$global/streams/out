@@ -1,0 +1,12 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/application.conf,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/log4j2.xml,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/log4j2.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/d3,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/d3)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/d3/d3.v5.js,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/d3/d3.v5.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/d3/d3.geom.js,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/d3/d3.geom.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/d3/d3.layout.js,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/d3/d3.layout.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/d3/d3.js,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/d3/d3.js)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/monitor.html,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/monitor.html)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/monitor3.html,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/monitor3.html)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/home/ubuntu/akka/akka_sample/src/main/resources/web/monitor2.html,/home/ubuntu/akka/akka_sample/target/scala-2.12/classes/web/monitor2.html)[0m
