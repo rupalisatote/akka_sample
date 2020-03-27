@@ -16,6 +16,7 @@ val scalaTestVersion = "3.1.0"
 val mongoPersistencePluginVersion = "2.3.1"
 val scalaMongoDriverVersion = "2.7.0"
 val matryoshkaV = "0.21.3"
+val MongoJavaDriverVersion = "3.12.0"
 
 lazy val `akka-sample-cluster-scala` = project
   .in(file("."))
@@ -47,7 +48,9 @@ lazy val `akka-sample-cluster-scala` = project
       "com.typesafe.akka"               %% "akka-persistence"               % akkaVersion,
       "com.typesafe.akka"               %% "akka-discovery"                 % akkaVersion,
       "com.github.scullxbones"          %% "akka-persistence-mongo-scala"   % mongoPersistencePluginVersion,
-      "org.mongodb.scala"               %% "mongo-scala-driver"             % scalaMongoDriverVersion,
+      //"org.mongodb.scala"               %% "mongo-scala-driver"             % scalaMongoDriverVersion,
+      "org.mongodb"               % "mongodb-driver-core"       % MongoJavaDriverVersion   % "compile",
+      "org.mongodb"               % "mongodb-driver"            % MongoJavaDriverVersion   % "test",
 
 
 
