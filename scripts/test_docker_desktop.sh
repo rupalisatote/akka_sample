@@ -2,10 +2,10 @@
 
 set -exu
 
-sbt docker:publishLocal
+sbt docker:publish
 
 export KUBECONFIG=~/.kube/config
-kubectl config set-context docker-desktop
+kubectl config set-context kubernetes
 
 kubectl apply -f kubernetes/namespace.json
 kubectl config set-context --current --namespace=demo-1

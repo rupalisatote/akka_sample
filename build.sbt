@@ -2,6 +2,7 @@ import com.typesafe.sbt.SbtMultiJvm.multiJvmSettings
 
 enablePlugins(JavaServerAppPackaging)
 enablePlugins(DockerPlugin)
+enablePlugins(DockerSpotifyClientPlugin)
 
 val akkaVersion = "2.5.25"
 val akkaHttpVersion = "10.1.9"
@@ -92,6 +93,7 @@ lazy val `akka-sample-cluster-scala` = project
     discoveredMainClasses in Compile := Seq("sample.cluster.k8s.Runner"),
     dockerExposedPorts := Seq(9000, 8558, 2552),
     dockerBaseImage := "java:openjdk-8",
+    dockerRepository := Some("rupalisatote"),
     maintainer := "tpaesen",
     packageName in Docker := "cluster-vizualizer"
   )

@@ -1,0 +1,32 @@
+[0m[[0m[0mdebug[0m] [0m[0mExecuting docker push rupalisatote/cluster-vizualizer:0.1[0m
+[0m[[0m[0minfo[0m] [0m[0mThe push refers to repository [docker.io/rupalisatote/cluster-vizualizer][0m
+[0m[[0m[0minfo[0m] [0m[0mc0ee97793e61: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0me4095475d09f: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0mf6ebeb58b00a: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m35c20f26d188: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0mc3fe59dd9556: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m6ed1a81ba5b6: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0ma3483ce177ce: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0mce6c8756685b: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m30339f20ced0: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m0eb22bfb707d: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0ma2ae92ffcd29: Preparing[0m
+[0m[[0m[0minfo[0m] [0m[0m6ed1a81ba5b6: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0ma3483ce177ce: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0mce6c8756685b: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m30339f20ced0: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0m0eb22bfb707d: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0ma2ae92ffcd29: Waiting[0m
+[0m[[0m[0minfo[0m] [0m[0mc3fe59dd9556: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0m35c20f26d188: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0m6ed1a81ba5b6: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0mce6c8756685b: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0ma3483ce177ce: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0m30339f20ced0: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0ma2ae92ffcd29: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0me4095475d09f: Pushed[0m
+[0m[[0m[0minfo[0m] [0m[0m0eb22bfb707d: Layer already exists[0m
+[0m[[0m[0minfo[0m] [0m[0mf6ebeb58b00a: Pushed[0m
+[0m[[0m[0minfo[0m] [0m[0mc0ee97793e61: Pushed[0m
+[0m[[0m[0minfo[0m] [0m[0m0.1: digest: sha256:cea417a9bc6985d00ae623a32128440d6f4766b43de0238a0d55d01a5f092016 size: 2627[0m
+[0m[[0m[0minfo[0m] [0m[0mPublished image rupalisatote/cluster-vizualizer:0.1[0m
