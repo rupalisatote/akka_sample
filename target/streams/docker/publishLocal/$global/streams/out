@@ -4,82 +4,81 @@
 [0m[[0m[0minfo[0m] [0m[0m ---> d23bdf5b1b1b[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 2/18 : LABEL snp-multi-stage="intermediate"[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 28d265476aaa[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 28d265476aaa[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 57dcec23074b[0m
-[0m[[0m[0minfo[0m] [0m[0mStep 3/18 : LABEL snp-multi-stage-id="f6dccc2f-4792-40ba-8226-c24b778f106a"[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Using cache[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> baf8c7897e80[0m
+[0m[[0m[0minfo[0m] [0m[0mStep 3/18 : LABEL snp-multi-stage-id="6b254571-51d2-4b42-bbfb-598e0922ec85"[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in f51adb5ab0af[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container f51adb5ab0af[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 3b869578692c[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 010300eee125[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 010300eee125[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 02c183e73a2b[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 4/18 : WORKDIR /opt/docker[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in a9b4e5110ffb[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container a9b4e5110ffb[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> b5eaa7a0962f[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 7bddc1cf7a74[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 7bddc1cf7a74[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ea1297ec9f60[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 5/18 : COPY opt /opt[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> c3bf52e91ecc[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> e5d0844d9570[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 6/18 : USER root[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 63742a3a0fc2[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 63742a3a0fc2[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> b8f5419fb932[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 31e8a837f7d4[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 31e8a837f7d4[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> f5d08ceae8bf[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 7/18 : RUN ["chmod", "-R", "u=rX,g=rX", "/opt/docker"][0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 3c1a4c44383d[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 3c1a4c44383d[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 5937f67734b4[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in e9d14273e17a[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container e9d14273e17a[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> b4ed00e0cb14[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 8/18 : RUN ["chmod", "u+x,g+x", "/opt/docker/bin/akka-sample-cluster-scala"][0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in c9717d2fb9b0[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container c9717d2fb9b0[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 959ce39377cb[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in b8d2cbea815d[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container b8d2cbea815d[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 1ec94c18a92b[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 9/18 : FROM java:openjdk-8[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m ---> d23bdf5b1b1b[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 10/18 : LABEL MAINTAINER="tpaesen"[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 10d971cfeb2c[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 10d971cfeb2c[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 726b39d4396e[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in d739888c5f09[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container d739888c5f09[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 5031848f0f27[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 11/18 : USER root[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 18a10a4aa93e[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 18a10a4aa93e[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 9cb95a97ba7c[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in e95f551093c0[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container e95f551093c0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ae1cb30d7107[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 12/18 : RUN id -u demiourgos728 1>/dev/null 2>&1 || (( getent group 0 1>/dev/null 2>&1 || ( type groupadd 1>/dev/null 2>&1 && groupadd -g 0 root || addgroup -g 0 -S root )) && ( type useradd 1>/dev/null 2>&1 && useradd --system --create-home --uid 1001 --gid 0 demiourgos728 || adduser -S -u 1001 -G root demiourgos728 ))[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 7898e18a3867[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 7898e18a3867[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 963ff5a368d0[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 23bd390be59d[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 23bd390be59d[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 80bc48ecdd32[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 13/18 : WORKDIR /opt/docker[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in b1c97b7d0806[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container b1c97b7d0806[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 0dd2de51dc9a[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 97be82932d5f[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 97be82932d5f[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 8157f3e0a11e[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 14/18 : COPY --from=stage0 --chown=demiourgos728:root /opt/docker /opt/docker[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 70b82ec659fa[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 2b89a4e12a6f[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 15/18 : EXPOSE 9000 8558 2552[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 208cbb0ba28f[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 208cbb0ba28f[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 9f3aa5b7650a[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 8cc295007907[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 8cc295007907[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> ce53ee399473[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 16/18 : USER 1001:0[0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in faa9dbde3a0e[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container faa9dbde3a0e[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 113bf3aadf5a[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 6935d23b7048[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 6935d23b7048[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 55f07d86dfad[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 17/18 : ENTRYPOINT ["/opt/docker/bin/akka-sample-cluster-scala"][0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in dad6a3e33d01[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container dad6a3e33d01[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> ef23045412f9[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 47aa5a6dc433[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 47aa5a6dc433[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> 4c6ecd56bf80[0m
 [0m[[0m[0minfo[0m] [0m[0mStep 18/18 : CMD [][0m
 [0m[[0m[0minfo[0m] [0m[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> Running in 40d524ad57b9[0m
-[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 40d524ad57b9[0m
-[0m[[0m[0minfo[0m] [0m[0m ---> 3aadc45bbecc[0m
-[0m[[0m[0minfo[0m] [0m[0mSuccessfully built 3aadc45bbecc[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> Running in 8755307edcfc[0m
+[0m[[0m[0minfo[0m] [0m[0mRemoving intermediate container 8755307edcfc[0m
+[0m[[0m[0minfo[0m] [0m[0m ---> d42ec0456419[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully built d42ec0456419[0m
 [0m[[0m[0minfo[0m] [0m[0mSuccessfully tagged rupalisatote/cluster-vizualizer:0.1[0m

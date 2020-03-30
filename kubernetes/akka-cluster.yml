@@ -25,8 +25,8 @@ spec:
     spec:
       containers:
       - name: k8s-backend
-        image: cluster-vizualizer:0.1
-        imagePullPolicy: Never
+        image: rupalisatote/cluster-vizualizer:0.1
+        #        imagePullPolicy: Always
 #        readinessProbe:
 #          httpGet:
 #            path: /ready
@@ -101,8 +101,8 @@ spec:
     spec:
       containers:
         - name: k8s-frontend
-          image: cluster-vizualizer:0.1
-          imagePullPolicy: Never
+          image: rupalisatote/cluster-vizualizer:0.1
+          #          imagePullPolicy: Always
 #          readinessProbe:
 #            httpGet:
 #              path: /ready

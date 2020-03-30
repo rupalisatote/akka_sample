@@ -4,7 +4,7 @@
 		module="akka-sample-cluster-scala_2.12"
 		revision="0.1"
 		status="integration"
-		publication="20200312064246"
+		publication="20200330063006"
 	>
 		<license name="CC0" url="http://creativecommons.org/publicdomain/zero/1.0" />
 		<description>
